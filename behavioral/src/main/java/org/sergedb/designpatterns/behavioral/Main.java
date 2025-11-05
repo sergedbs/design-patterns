@@ -1,4 +1,4 @@
-package org.sergedb.designpatterns;
+package org.sergedb.designpatterns.behavioral;
 
 public class Main {
     public static void main(String[] args) {
