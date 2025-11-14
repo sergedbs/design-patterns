@@ -5,7 +5,7 @@ import org.sergedb.designpatterns.creational.factorymethod.Shop;
 
 public class ClothesShop implements Shop {
 
-    public Product sell() {
+    public Product createProduct() {
         return new ClothesProduct();
     }
 }

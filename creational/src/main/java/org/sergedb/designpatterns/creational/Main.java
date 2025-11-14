@@ -21,10 +21,10 @@ public class Main {
         mall.addShop(clothesShop);
         mall.addShop(electronicsShop);
 
-        Product clothing = clothesShop.sell();
+        Product clothing = clothesShop.createProduct();
         clothing.info();
 
-        Product electronics = electronicsShop.sell();
+        Product electronics = electronicsShop.createProduct();
         electronics.info();
 
         System.out.println("Total shops in the mall: " + mall.getShopsCount());
