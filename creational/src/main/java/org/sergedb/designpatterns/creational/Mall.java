@@ -1,7 +1,7 @@
 package org.sergedb.designpatterns.creational;
 
-import org.sergedb.designpatterns.creational.foodcourts.FoodPlaceFactory;
-import org.sergedb.designpatterns.creational.shops.Shop;
+import org.sergedb.designpatterns.creational.abstractfactory.FoodPlaceFactory;
+import org.sergedb.designpatterns.creational.factorymethod.Shop;
 
 import java.util.ArrayList;
 

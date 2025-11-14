@@ -1,9 +1,13 @@
 package org.sergedb.designpatterns.creational;
 
-import org.sergedb.designpatterns.creational.foodcourts.*;
-import org.sergedb.designpatterns.creational.shops.ClothesShop;
-import org.sergedb.designpatterns.creational.shops.ElectronicsShop;
-import org.sergedb.designpatterns.creational.shops.Product;
+import org.sergedb.designpatterns.creational.abstractfactory.Burger;
+import org.sergedb.designpatterns.creational.abstractfactory.Cola;
+import org.sergedb.designpatterns.creational.abstractfactory.FoodPlaceFactory;
+import org.sergedb.designpatterns.creational.abstractfactory.kfc.KfcFactory;
+import org.sergedb.designpatterns.creational.abstractfactory.mcdonalds.McDonaldsFactory;
+import org.sergedb.designpatterns.creational.factorymethod.clothes.ClothesShop;
+import org.sergedb.designpatterns.creational.factorymethod.electronics.ElectronicsShop;
+import org.sergedb.designpatterns.creational.factorymethod.Product;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,14 +38,14 @@ public class Main {
         Burger burger1 = kfcFactory.sellBurger();
         burger1.info();
 
-        Drink drink1 = kfcFactory.sellDrink();
-        drink1.info();
+        Cola cola1 = kfcFactory.sellDrink();
+        cola1.info();
 
         Burger burger2 = mcDonaldsFactory.sellBurger();
         burger2.info();
 
-        Drink drink2 =  mcDonaldsFactory.sellDrink();
-        drink2.info();
+        Cola cola2 =  mcDonaldsFactory.sellDrink();
+        cola2.info();
 
         System.out.println("Total food places in the mall: " + mall.getFoodPlacesCount());
     }
