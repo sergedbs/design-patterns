@@ -5,6 +5,6 @@ import org.sergedb.designpatterns.creational.factorymethod.Product;
 public class ClothesProduct implements Product {
 
     public void info() {
-        System.out.println("This is a piece of clothing.");
+        System.out.println("[Clothes] This is a piece of clothing.");
     }
 }

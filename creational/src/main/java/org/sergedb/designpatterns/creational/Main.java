@@ -13,8 +13,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Creational Design Patterns Demo: Mall Example");
 
+        // Singleton
         Mall mall = Mall.getInstance();
 
+        // Factory Method
+        System.out.println("\n--- Factory Method Pattern Demo ---"); 
         ClothesShop clothesShop = new ClothesShop();
         ElectronicsShop electronicsShop = new ElectronicsShop();
 
@@ -27,8 +30,10 @@ public class Main {
         Product electronics = electronicsShop.createProduct();
         electronics.info();
 
-        System.out.println("Total shops in the mall: " + mall.getShopsCount());
+        System.out.println("[Singleton] Total shops in the mall: " + mall.getShopsCount());
 
+        // Abstract Factory
+        System.out.println("\n--- Abstract Factory Pattern Demo ---");
         FoodPlaceFactory kfcFactory = new KfcFactory();
         FoodPlaceFactory mcDonaldsFactory = new McDonaldsFactory();
 
@@ -47,6 +52,6 @@ public class Main {
         Cola cola2 =  mcDonaldsFactory.sellDrink();
         cola2.info();
 
-        System.out.println("Total food places in the mall: " + mall.getFoodPlacesCount());
+        System.out.println("[Singleton] Total food places in the mall: " + mall.getFoodPlacesCount());
     }
 }

@@ -4,6 +4,6 @@ import org.sergedb.designpatterns.creational.abstractfactory.Burger;
 
 public class BigMacBurger implements Burger {
     public void info() {
-        System.out.println("This is a Big Mac Burger");
+        System.out.println("[McDonalds] This is a Big Mac Burger");
     }
 }
